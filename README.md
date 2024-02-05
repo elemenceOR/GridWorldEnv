@@ -13,8 +13,16 @@ Before using the environment, install it using
 ```bash
 pip install -e grid
 ```
+
 * Use main.py to test out A2C and DQN
-* USe 
+* Use qL_agent_cstm.py to test the custom q learning algorythm
+
+> [!TIP]
+> The grid can be customized to any size as long as it a squre. ( Eg: 5x5, 10x10, 20x20 )
+
+> [!TIP]
+> Starting and Ending can be anything as long as there is no obstacle. 
+
 
 ## Basic Environment Structure
 ![Screenshot 2024-02-05 150855](https://github.com/elemenceOR/GridWorldEnv/assets/52843991/8205e3ab-6966-4c46-b65a-ded551f0b5a3)
@@ -97,6 +105,9 @@ _Shaped Rewards with Time Penalty:_
 * Time penalty - reward -0.01
 
 ![63compsvg](https://github.com/elemenceOR/GridWorldEnv/assets/52843991/0a81eca2-a26e-4d00-a03d-f80a922c72a3)
+
+> [!CAUTION]
+> Time penalty does not work on custom Q learning. Still working on it. 
 
 ## Summery
 In summary, the comparison of policy-based and non-policy-based Reinforcement Learning (RL) algorithms in a 10x10 grid world environment revealed distinct performance differences. Tabular Q learning, a non-policy-based algorithm, demonstrated faster convergence compared to DQN due to the environment's simplicity and the efficiency of updating a smaller state table. DQN, on the other hand, faced challenges with sample efficiency in the small environment, making it less suitable. A2C, a policy-based algorithm, outperformed DQN with a higher convergence rate attributed to its entropy regularization exploration strategy, enhancing sample efficiency. Despite tabular Q learning showing better performance in the given environment, A2C exhibited quicker convergence in terms of iterations due to its sample efficiency. Ultimately, for the specified grid world environment, tabular Q learning proved to be more efficient than both DQN and A2C.
