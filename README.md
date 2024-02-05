@@ -8,11 +8,13 @@ process only a binary sparse reward system where the agent will get a reward onl
 of a successful episode. But it is requiring to understand the effects of other types of reward
 systems. This allows to choose the most effective reward system for a given algorithm.
 
-## Installation
+## Installation and Using
 Before using the environment, install it using
 ```bash
 pip install -e grid
 ```
+* Use main.py to test out A2C and DQN
+* USe 
 
 ## Basic Environment Structure
 ![Screenshot 2024-02-05 150855](https://github.com/elemenceOR/GridWorldEnv/assets/52843991/8205e3ab-6966-4c46-b65a-ded551f0b5a3)
